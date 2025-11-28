@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="cheng chao" />
+  <!-- Open Graph Description 简短摘要-->
+  
+  <!-- 用于搜索引擎的文章摘要 -->
+  
+  
+  
+  <title>
+    
+      ChatGPT 年终分析 
+      
+      
+      |
+    
+     我的博客
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">诗和远方</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">ChatGPT 年终分析</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2025-11-28 15:02:59
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <p>下面是基于 <strong>你今年以来（从已记录的记忆 + 最近长期的对话主题）</strong> 的 <strong>整体提问趋势分析</strong>。我把问题按“主题领域”与“背后的核心动机”两部分拆开总结，让你能看到自己今年的整体学习轨迹与心态变化。</p>
+<hr>
+<h1 id="一、今年提问的主要主题大类"><a href="#一、今年提问的主要主题大类" class="headerlink" title="一、今年提问的主要主题大类"></a><strong>一、今年提问的主要主题大类</strong></h1><h2 id="1-技术与学习方向探索（占比最大）"><a href="#1-技术与学习方向探索（占比最大）" class="headerlink" title="1. 技术与学习方向探索（占比最大）"></a><strong>1. 技术与学习方向探索（占比最大）</strong></h2><p>你今年持续在不同技术方向之间寻找“值得投入、能看到成果、未来不被淘汰”的路线。<br>主要涉及：</p>
+<h3 id="🔹-游戏开发"><a href="#🔹-游戏开发" class="headerlink" title="🔹 游戏开发"></a><strong>🔹 游戏开发</strong></h3><ul>
+<li>Cocos Creator 反编译</li>
+<li>Phaser 3 等轴 RPG</li>
+<li>Godot 4 Roguelike</li>
+<li>Love2D JRPG</li>
+<li>Go + Flask + Canvas 策略游戏</li>
+<li>游戏框架（Skynet、Go Gin、分布式游戏服务器）</li>
+</ul>
+<h3 id="🔹-后端-Web-技术"><a href="#🔹-后端-Web-技术" class="headerlink" title="🔹 后端 &#x2F; Web 技术"></a><strong>🔹 后端 &#x2F; Web 技术</strong></h3><ul>
+<li>Flask、Django（Admin、Breeze、登录）</li>
+<li>前端编辑器（WangEditor、Editor.md）</li>
+<li>HTML&#x2F;CSS&#x2F;JS 坐标网格工具</li>
+<li>VS Code &amp; AI 使用</li>
+</ul>
+<h3 id="🔹-嵌入式-MCU-SoC-数字电路"><a href="#🔹-嵌入式-MCU-SoC-数字电路" class="headerlink" title="🔹 嵌入式 &#x2F; MCU &#x2F; SoC &#x2F; 数字电路"></a><strong>🔹 嵌入式 &#x2F; MCU &#x2F; SoC &#x2F; 数字电路</strong></h3><ul>
+<li>FPGA&#x2F;ASIC、RTL、AXI&#x2F;APB 等</li>
+<li>MCU vs 嵌入式的职业路线</li>
+<li>BMS 系统是否值得学</li>
+</ul>
+<h3 id="🔹-自动化-运维-Python"><a href="#🔹-自动化-运维-Python" class="headerlink" title="🔹 自动化 &#x2F; 运维 &#x2F; Python"></a><strong>🔹 自动化 &#x2F; 运维 &#x2F; Python</strong></h3><ul>
+<li>爬虫、解析 HTML、Playwright</li>
+<li>Python 小游戏</li>
+<li>运维转型脚本化方向</li>
+</ul>
+<p>👉 <strong>这一类问题反映你今年一直在寻找一个自己能长期投入的、能带来稳定产出的技术方向。</strong></p>
+<hr>
+<h2 id="2-职业焦虑、转型思考-年龄压力"><a href="#2-职业焦虑、转型思考-年龄压力" class="headerlink" title="2. 职业焦虑、转型思考 &amp; 年龄压力"></a><strong>2. 职业焦虑、转型思考 &amp; 年龄压力</strong></h2><p>你经常提到：</p>
+<ul>
+<li>年纪和精力问题（30+ 学技术是否来得及）</li>
+<li>技术路线“投入大产出低”</li>
+<li>互联网行业门槛、年龄限制</li>
+<li>学了很多“只能在当前公司用”的旧系统技能</li>
+<li>“生产力”和“能否通用”的焦虑</li>
+<li>桌面运维向自动化转型</li>
+</ul>
+<p>👉 <strong>今年你在强烈寻找“一个能支撑未来10年”的职业路径。</strong></p>
+<hr>
+<h2 id="3-生活、家庭与压力处理"><a href="#3-生活、家庭与压力处理" class="headerlink" title="3. 生活、家庭与压力处理"></a><strong>3. 生活、家庭与压力处理</strong></h2><p>这类问题贯穿全年，但最近更集中：</p>
+<ul>
+<li>父母养老院、债务、高利贷、赡养义务</li>
+<li>人际交往、相亲压力、沟通方式</li>
+<li>情绪管理与疲劳感</li>
+<li>早上不适（肠胃、早餐调整）</li>
+<li>金融危机下普通人的生存策略</li>
+<li>保险被骗、财务安全</li>
+</ul>
+<p>👉 <strong>你今年很明显承担更多家庭与现实生活责任，压力显著增加。</strong></p>
+<hr>
+<h2 id="4-心态与人生方向"><a href="#4-心态与人生方向" class="headerlink" title="4. 心态与人生方向"></a><strong>4. 心态与人生方向</strong></h2><p>你提过非常多“抽象但直击核心”的问题：</p>
+<ul>
+<li>为什么精力跟不上</li>
+<li>是否该躺平</li>
+<li>探索 vs 生产力</li>
+<li>人生是不是应该“积累固定资产然后躺平”</li>
+<li>学技术的意义</li>
+<li>生活规律（每日规划、记录方式）</li>
+<li>对“未知”“探索”的价值</li>
+<li>“人际交往弱”的处理方式</li>
+</ul>
+<p>👉 <strong>你今年在重新审视“自己是谁 &amp; 要走哪条路”。</strong></p>
+<hr>
+<h2 id="5-数码产品-实用类"><a href="#5-数码产品-实用类" class="headerlink" title="5. 数码产品 &amp; 实用类"></a><strong>5. 数码产品 &amp; 实用类</strong></h2><p>包括：</p>
+<ul>
+<li>iPhone 选择、APP 区域限制</li>
+<li>电脑适配器方案</li>
+<li>Wacom 数位板对比</li>
+<li>读卡器驱动</li>
+<li>HTML 图片等高问题</li>
+</ul>
+<p>这类问题更偏向<strong>即时需求</strong>而非长期主题。</p>
+<hr>
+<h1 id="二、今年你问题背后的“核心主题”总结"><a href="#二、今年你问题背后的“核心主题”总结" class="headerlink" title="二、今年你问题背后的“核心主题”总结"></a><strong>二、今年你问题背后的“核心主题”总结</strong></h1><p>根据你整年的问题，我提炼出 <strong>6 个你今年一直在探索的核心问题</strong>：</p>
+<hr>
+<h2 id="①-什么技能值得长期投入？"><a href="#①-什么技能值得长期投入？" class="headerlink" title="① 什么技能值得长期投入？"></a><strong>① 什么技能值得长期投入？</strong></h2><p>你不断比较：</p>
+<ul>
+<li>Web、后端、Python</li>
+<li>游戏开发（多引擎）</li>
+<li>嵌入式、SoC、数字电路</li>
+<li>运维 → 自动化</li>
+<li>BMS、MCU</li>
+</ul>
+<p>你真正想找的是：</p>
+<p><strong>一个未来10年不会淘汰、能提高生产力、又不会学到精疲力竭的技能体系。</strong></p>
+<hr>
+<h2 id="②-年龄-精力衰减-职业转型压力"><a href="#②-年龄-精力衰减-职业转型压力" class="headerlink" title="② 年龄 + 精力衰减 + 职业转型压力"></a><strong>② 年龄 + 精力衰减 + 职业转型压力</strong></h2><p>多次提到：</p>
+<ul>
+<li>30岁以后明显累</li>
+<li>“年轻时感觉不到的事情现在感觉到了”</li>
+<li>焦虑自己是否还能转型</li>
+<li>投入 vs 收益不成比例</li>
+</ul>
+<p><strong>这是你全年最贯穿的话题之一。</strong></p>
+<hr>
+<h2 id="③-如何在混乱的技术世界里保持方向？"><a href="#③-如何在混乱的技术世界里保持方向？" class="headerlink" title="③ 如何在混乱的技术世界里保持方向？"></a><strong>③ 如何在混乱的技术世界里保持方向？</strong></h2><p>你几乎每个月都在找：</p>
+<ul>
+<li>学习路线图</li>
+<li>技能树</li>
+<li>系统化学习的方法</li>
+<li>整理、规划的方式</li>
+<li>每日计划是否必要</li>
+</ul>
+<p><strong>你其实想要的是一种“稳定感 + 有方向的成长”。</strong></p>
+<hr>
+<h2 id="④-如何处理生活与家庭中的不确定性？"><a href="#④-如何处理生活与家庭中的不确定性？" class="headerlink" title="④ 如何处理生活与家庭中的不确定性？"></a><strong>④ 如何处理生活与家庭中的不确定性？</strong></h2><p>包括：</p>
+<ul>
+<li>家庭经济纠纷</li>
+<li>法律义务</li>
+<li>保险</li>
+<li>金融危机</li>
+<li>储蓄与现金安全</li>
+</ul>
+<p>这些问题反映了你的：</p>
+<p><strong>安全感需求 → 强烈</strong></p>
+<hr>
+<h2 id="⑤-如何面对“兴趣爱好”和“生产力”的割裂"><a href="#⑤-如何面对“兴趣爱好”和“生产力”的割裂" class="headerlink" title="⑤ 如何面对“兴趣爱好”和“生产力”的割裂"></a><strong>⑤ 如何面对“兴趣爱好”和“生产力”的割裂</strong></h2><p>你多次提到：</p>
+<ul>
+<li>小时候喜欢探索世界</li>
+<li>游戏中的探索</li>
+<li>新技术不断想学</li>
+<li>对未知的兴趣</li>
+<li>但是：社会要求稳定、可量化的技能</li>
+</ul>
+<p>你今年在问：</p>
+<p><strong>“我到底是应该走探索型人生，还是变成一个执行型的生产力工具人？”</strong></p>
+<hr>
+<h2 id="⑥-对人际关系与沟通的困惑"><a href="#⑥-对人际关系与沟通的困惑" class="headerlink" title="⑥ 对人际关系与沟通的困惑"></a><strong>⑥ 对人际关系与沟通的困惑</strong></h2><p>包括：</p>
+<ul>
+<li>相亲沟通</li>
+<li>与同事角色分工（谁干累活）</li>
+<li>如何低成本处理人际</li>
+<li>“我只想管好自己那一份”</li>
+</ul>
+<p>你倾向：</p>
+<p><strong>独行者 + 不想卷人际 + 希望靠硬实力立足。</strong></p>
+<hr>
+<h1 id="三、总结：你今年的核心变化轨迹"><a href="#三、总结：你今年的核心变化轨迹" class="headerlink" title="三、总结：你今年的核心变化轨迹"></a><strong>三、总结：你今年的核心变化轨迹</strong></h1><p>我把全年的问题脉络总结成一句话：</p>
+<blockquote>
+<p><strong>今年你开始从“兴趣型探索者”转向“寻找可持续未来的成年人”。<br>在技术、职业、健康、家庭、心态方面都在进行系统性的重新规划。</strong></p>
+</blockquote>
+<p>你的问题背后是一条线性的变化：</p>
+<p><strong>迷茫（年初） → 探索（中期） → 焦虑（中后期） → 规划（近期）</strong></p>
+<p>尤其是最近这三个月：</p>
+<ul>
+<li>职业方向焦虑明显加重</li>
+<li>生活责任增加</li>
+<li>身体精力下降明显</li>
+<li>技术探索更偏向“能赚钱、可持续、适合自己”</li>
+</ul>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2025/11/28/p2/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2025-11-28 15:02:59
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2025/11/28/p4/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BB%8A%E5%B9%B4%E6%8F%90%E9%97%AE%E7%9A%84%E4%B8%BB%E8%A6%81%E4%B8%BB%E9%A2%98%E5%A4%A7%E7%B1%BB"><span class="toc-text">一、今年提问的主要主题大类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%8A%80%E6%9C%AF%E4%B8%8E%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%90%91%E6%8E%A2%E7%B4%A2%EF%BC%88%E5%8D%A0%E6%AF%94%E6%9C%80%E5%A4%A7%EF%BC%89"><span class="toc-text">1. 技术与学习方向探索（占比最大）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%94%B9-%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91"><span class="toc-text">🔹 游戏开发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%94%B9-%E5%90%8E%E7%AB%AF-Web-%E6%8A%80%E6%9C%AF"><span class="toc-text">🔹 后端 &#x2F; Web 技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%94%B9-%E5%B5%8C%E5%85%A5%E5%BC%8F-MCU-SoC-%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF"><span class="toc-text">🔹 嵌入式 &#x2F; MCU &#x2F; SoC &#x2F; 数字电路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%94%B9-%E8%87%AA%E5%8A%A8%E5%8C%96-%E8%BF%90%E7%BB%B4-Python"><span class="toc-text">🔹 自动化 &#x2F; 运维 &#x2F; Python</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E8%81%8C%E4%B8%9A%E7%84%A6%E8%99%91%E3%80%81%E8%BD%AC%E5%9E%8B%E6%80%9D%E8%80%83-%E5%B9%B4%E9%BE%84%E5%8E%8B%E5%8A%9B"><span class="toc-text">2. 职业焦虑、转型思考 &amp; 年龄压力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%94%9F%E6%B4%BB%E3%80%81%E5%AE%B6%E5%BA%AD%E4%B8%8E%E5%8E%8B%E5%8A%9B%E5%A4%84%E7%90%86"><span class="toc-text">3. 生活、家庭与压力处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%BF%83%E6%80%81%E4%B8%8E%E4%BA%BA%E7%94%9F%E6%96%B9%E5%90%91"><span class="toc-text">4. 心态与人生方向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%95%B0%E7%A0%81%E4%BA%A7%E5%93%81-%E5%AE%9E%E7%94%A8%E7%B1%BB"><span class="toc-text">5. 数码产品 &amp; 实用类</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BB%8A%E5%B9%B4%E4%BD%A0%E9%97%AE%E9%A2%98%E8%83%8C%E5%90%8E%E7%9A%84%E2%80%9C%E6%A0%B8%E5%BF%83%E4%B8%BB%E9%A2%98%E2%80%9D%E6%80%BB%E7%BB%93"><span class="toc-text">二、今年你问题背后的“核心主题”总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%91%A0-%E4%BB%80%E4%B9%88%E6%8A%80%E8%83%BD%E5%80%BC%E5%BE%97%E9%95%BF%E6%9C%9F%E6%8A%95%E5%85%A5%EF%BC%9F"><span class="toc-text">① 什么技能值得长期投入？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%91%A1-%E5%B9%B4%E9%BE%84-%E7%B2%BE%E5%8A%9B%E8%A1%B0%E5%87%8F-%E8%81%8C%E4%B8%9A%E8%BD%AC%E5%9E%8B%E5%8E%8B%E5%8A%9B"><span class="toc-text">② 年龄 + 精力衰减 + 职业转型压力</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%91%A2-%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B7%B7%E4%B9%B1%E7%9A%84%E6%8A%80%E6%9C%AF%E4%B8%96%E7%95%8C%E9%87%8C%E4%BF%9D%E6%8C%81%E6%96%B9%E5%90%91%EF%BC%9F"><span class="toc-text">③ 如何在混乱的技术世界里保持方向？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%91%A3-%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86%E7%94%9F%E6%B4%BB%E4%B8%8E%E5%AE%B6%E5%BA%AD%E4%B8%AD%E7%9A%84%E4%B8%8D%E7%A1%AE%E5%AE%9A%E6%80%A7%EF%BC%9F"><span class="toc-text">④ 如何处理生活与家庭中的不确定性？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%91%A4-%E5%A6%82%E4%BD%95%E9%9D%A2%E5%AF%B9%E2%80%9C%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD%E2%80%9D%E5%92%8C%E2%80%9C%E7%94%9F%E4%BA%A7%E5%8A%9B%E2%80%9D%E7%9A%84%E5%89%B2%E8%A3%82"><span class="toc-text">⑤ 如何面对“兴趣爱好”和“生产力”的割裂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%91%A5-%E5%AF%B9%E4%BA%BA%E9%99%85%E5%85%B3%E7%B3%BB%E4%B8%8E%E6%B2%9F%E9%80%9A%E7%9A%84%E5%9B%B0%E6%83%91"><span class="toc-text">⑥ 对人际关系与沟通的困惑</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%80%BB%E7%BB%93%EF%BC%9A%E4%BD%A0%E4%BB%8A%E5%B9%B4%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8F%98%E5%8C%96%E8%BD%A8%E8%BF%B9"><span class="toc-text">三、总结：你今年的核心变化轨迹</span></a></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          
+              <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
+                <i class="iconfont icon-github"></i>
+              </a>
+              
+        </li>
+        
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/kkxunguan">Copyright © 2025 cheng chao</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>未找到search.xml文件，具体请参考：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>请求失败，尝试重新刷新页面或稍后重试。<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+
+      </div>
+    </div>
+  </body>
+</html>
