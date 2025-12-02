@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>资产报废和预算</title>
+      <link href="/2025/12/02/p12/"/>
+      <url>/2025/12/02/p12/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>成也萧何，败也萧何。</p></blockquote><ul><li>资产报废和预算是两个事情，资产报废所产生的是收益，产生购买行为都要计入预算</li><li>产生抵扣行为，会导致计算变复杂，新旧产生的费用要单独计算</li><li>产生抵扣行为，会有一定的几率产生公司资产倒卖行为</li><li>替换型采购由公司&#x2F;行政&#x2F;IT统一承担，新资产金额不算部门预算；旧资产残值计入公司收入，不抵扣给部门。</li><li>为了避免争议，全部走部门预算</li><li>财务按照 使用部门&#x2F;每月 来计算部门预算，财务的残值计算和市场的残值计算完全不同</li><li>公司层面会完全榨干资产使用残值</li><li>个人层面会按照个人意愿和市场行情来规划资产使用</li><li>采购会提升很多个人的隐藏能力，并和风险与权限相结合</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>权限与风险归纳分析</title>
+      <link href="/2025/12/02/p11/"/>
+      <url>/2025/12/02/p11/</url>
+      
+        <content type="html"><![CDATA[<h3 id="权限与责任"><a href="#权限与责任" class="headerlink" title="权限与责任"></a>权限与责任</h3><ul><li>拥有系统权限会带来一定便利性，但同时伴随责任。</li><li>权限属于公司重要资产，谁拥有权限就要承担相应责任。</li><li>临时获取紧急处理权限是可以的，但不应拥有永久控制权。</li><li>权限越大，越是不能用于练习，只能用于执行。</li><li>对公司来说，权限是资源；对个人来说，权限是责任。</li><li>有能力的人拿到权限能做好工作；没有能力的人拿到权限容易出事故。</li></ul><h3 id="权限与工作"><a href="#权限与工作" class="headerlink" title="权限与工作"></a>权限与工作</h3><ul><li>拥有系统权限会影响本职工作，可能导致工作压力骤增。</li><li>没有系统岗位编制和充足时间，操作生产环境容易越操作越焦虑。</li><li>公司往往把临时权限者当作“救火队”，容易长期停留在操作层而非体系化学习。</li></ul><h3 id="学习与实践"><a href="#学习与实践" class="headerlink" title="学习与实践"></a>学习与实践</h3><ul><li>学习不受生产权限限制，可以在测试环境中完整学习系统管理技能。</li><li>学习时一定要分清权限与责任，避免在生产环境中练习导致风险。</li><li>学习应分阶段：1.测试环境练习能力 2.小权限安全实践 3.有能力后再掌握生产环境权限</li><li>明确边界、分清责任、书面沟通、分阶段练习，降低心理焦虑和越界感。</li></ul><h3 id="权限与个人价值"><a href="#权限与个人价值" class="headerlink" title="权限与个人价值"></a>权限与个人价值</h3><ul><li>权限是工具或手段，而不是个人价值本身。</li><li>个人价值体现在：解决问题的能力、效率、影响力，而不是权限大小。</li><li>权限可以帮助人更高效地发挥价值，但不等于价值本身。</li></ul><h3 id="能力展示与简历"><a href="#能力展示与简历" class="headerlink" title="能力展示与简历"></a>能力展示与简历</h3><ul><li>测试环境练习的能力也可以转化为可展示成果。</li><li>简历重点在能力，而不是操作环境是否为生产环境。</li><li>通过能力展示、项目成果、自动化脚本、实验项目等方式，让测试环境的学习经验在简历中体现价值。</li></ul><h3 id="历史人物类比"><a href="#历史人物类比" class="headerlink" title="历史人物类比"></a>历史人物类比</h3><ul><li>项羽拥有全部权限：一旦出现错误或被击败整个系统&#x2F;团队崩溃（垓下之战）</li><li>刘邦拥有部分权限：即使刘邦个人决策出错，下属韩信依然可以独立运作（拜韩信为大将军）</li><li>韩信拥有巨大权限：如果权力过大，也可能形成“半独立模块”，比如失控、叛变（韩信被杀）</li><li>权限集中 vs 权限分散：高效率但高风险，一旦失败几乎毁灭性。</li><li>风险集中 vs 风险分散：效率可能略低，但失败的冲击可控，系统更韧性。</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>躺平策略</title>
+      <link href="/2025/12/01/p10/"/>
+      <url>/2025/12/01/p10/</url>
+      
+        <content type="html"><![CDATA[<p>在魂系RPG里，你的状态就是：HP&#x2F;MP低，副本难度高，你最需要的不是硬打，而是<strong>避开高伤害区域</strong>，保持安全区和回血点。</p><p>我帮你列出现实中你应该避开的“高掉血坑”，并给出操作策略。</p><hr><h1 id="1️⃣-高压相亲任务"><a href="#1️⃣-高压相亲任务" class="headerlink" title="1️⃣ 高压相亲任务"></a><strong>1️⃣ 高压相亲任务</strong></h1><p><strong>坑</strong>：父母、战友、亲戚的强制催促；晚上10点电话、持续施压。<br><strong>掉血机制</strong>：心理HP持续掉，情绪值低落，长期低落可能影响工作学习。<br><strong>躲法</strong>：</p><ul><li>明确边界：例如直接说“最近忙于工作学习，等我有时间再联系”，坚持执行</li><li>不要立刻回应非必要信息</li><li>给自己设定心理缓冲区，允许暂时忽略催促</li></ul><hr><h1 id="2️⃣-不可控工作压力"><a href="#2️⃣-不可控工作压力" class="headerlink" title="2️⃣ 不可控工作压力"></a><strong>2️⃣ 不可控工作压力</strong></h1><p><strong>坑</strong>：裁员消息、同事冲突、紧急任务，随时掉血<br><strong>躲法</strong>：</p><ul><li>聚焦你能控制的部分，不要被不可控事件消耗精力</li><li>列任务优先级，先做重要&#x2F;必要的事</li><li>学会拒绝或推迟额外非核心工作</li><li>留出固定休息时间回血</li></ul><hr><h1 id="3️⃣-社交负担过大"><a href="#3️⃣-社交负担过大" class="headerlink" title="3️⃣ 社交负担过大"></a><strong>3️⃣ 社交负担过大</strong></h1><p><strong>坑</strong>：强制聚会、长时间陪同、应酬、无意义社交<br><strong>掉血机制</strong>：情绪消耗、心理疲惫<br><strong>躲法</strong>：</p><ul><li>学会礼貌拒绝或缩短参与时间</li><li>选择性保留核心社交，其他当作可跳过的副本</li><li>给自己“安全区”时间：独处、学习、爱好</li></ul><hr><h1 id="4️⃣-家庭情绪消耗"><a href="#4️⃣-家庭情绪消耗" class="headerlink" title="4️⃣ 家庭情绪消耗"></a><strong>4️⃣ 家庭情绪消耗</strong></h1><p><strong>坑</strong>：母亲的叨叨、父亲的期待、战友干预<br><strong>掉血机制</strong>：长期心理消耗，焦虑累积<br><strong>躲法</strong>：</p><ul><li>建立心理屏障：母亲唠叨时，用“我听到了，我会考虑”而不是争论</li><li>不要立刻回应情绪化问题</li><li>找固定时间和方式沟通，不让家庭成为随时掉血的副本</li></ul><hr><h1 id="5️⃣-自我高期望-完美主义"><a href="#5️⃣-自我高期望-完美主义" class="headerlink" title="5️⃣ 自我高期望&#x2F;完美主义"></a><strong>5️⃣ 自我高期望&#x2F;完美主义</strong></h1><p><strong>坑</strong>：总觉得自己必须成功、必须完美、不能失败<br><strong>掉血机制</strong>：失败一次，情绪掉很深，持续低落<br><strong>躲法</strong>：</p><ul><li>允许失败，不把失败当成自我否定</li><li>分清“努力做”和“必须成功”的界限</li><li>给自己心理存档点：失败后允许缓冲2–3天，再恢复</li></ul><hr><h1 id="6️⃣-不必要信息轰炸"><a href="#6️⃣-不必要信息轰炸" class="headerlink" title="6️⃣ 不必要信息轰炸"></a><strong>6️⃣ 不必要信息轰炸</strong></h1><p><strong>坑</strong>：新闻、社交媒体、他人评价、比较信息<br><strong>掉血机制</strong>：焦虑、压力、无休止比较<br><strong>躲法</strong>：</p><ul><li>限制信息输入，固定时间查看</li><li>避免被别人标准绑架</li><li>把注意力放在自己可控的事情上</li></ul><hr><h1 id="7️⃣-心理缺乏回血点"><a href="#7️⃣-心理缺乏回血点" class="headerlink" title="7️⃣ 心理缺乏回血点"></a><strong>7️⃣ 心理缺乏回血点</strong></h1><p><strong>坑</strong>：没有恢复机制，HP&#x2F;MP持续下降<br><strong>躲法</strong>：</p><ul><li>固定休息&#x2F;放松时间：运动、睡眠、兴趣爱好</li><li>情绪小仪式：泡个热水澡、冥想、听音乐</li><li>小成就积累：每天完成一点学习&#x2F;工作任务，获得心理经验点</li></ul><hr><h1 id="⚡-总结——“躺平版生存策略”"><a href="#⚡-总结——“躺平版生存策略”" class="headerlink" title="⚡ 总结——“躺平版生存策略”"></a><strong>⚡ 总结——“躺平版生存策略”</strong></h1><ol><li><strong>边界 &#x3D; 护甲</strong>：明确你不必随时回应的事项</li><li><strong>心理缓冲 &#x3D; 篝火</strong>：失败&#x2F;压力允许缓冲</li><li><strong>避开高伤害副本 &#x3D; 摆脱催促&#x2F;社交压力</strong></li><li><strong>控制可控 &#x3D; 技能释放</strong>：专注于自己能做的事情</li><li><strong>小成就回血 &#x3D; 升级经验</strong>：保证心理小胜，积累自信</li></ol><blockquote><p>简单说：躺平不是逃避生活，而是<strong>把高掉血任务跳过，把精力留给回血和核心副本</strong>。<br>你完全可以像魂系玩家一样，先不打高难副本，先稳住HP和MP，再决定下一步要不要出击。</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>神之亵渎1地图</title>
+      <link href="/2025/12/01/p9/"/>
+      <url>/2025/12/01/p9/</url>
+      
+        <content type="html"><![CDATA[<p>游戏感受：太魂系了，不开挂根本过不了，一个悬崖要跳很久才能上去</p><p><img src="/images/map01.jpg" alt="地图"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>带电操作</title>
       <link href="/2025/11/28/p8/"/>
       <url>/2025/11/28/p8/</url>
@@ -88,6 +140,19 @@
     
     
     <entry>
+      <title>博客选择</title>
+      <link href="/2025/11/28/p1/"/>
+      <url>/2025/11/28/p1/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo配置简单，文档齐全，部署到GitHub非常方便，但是基于node包管理机制，项目文件繁多。</p><h4 id="Hexo-oranges"><a href="#Hexo-oranges" class="headerlink" title="Hexo oranges"></a>Hexo oranges</h4><p>主题功能齐全，UI极简，而且简单。</p><h3 id="Hugo"><a href="#Hugo" class="headerlink" title="Hugo"></a>Hugo</h3><p>Hugo配置复杂，灵活性很高，部署到GitHub需要通过Action的方式手动实现，项目文件结构简单，但是坑很多。</p><h4 id="Hugo-awesome"><a href="#Hugo-awesome" class="headerlink" title="Hugo awesome"></a>Hugo awesome</h4><p>主题简单，功能很少，可以完全定制主题。</p><h4 id="Hugo-stack"><a href="#Hugo-stack" class="headerlink" title="Hugo stack"></a>Hugo stack</h4><p>主题功能齐全，配置复杂，定制主题需要覆盖源文件。</p><h3 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h3><p>我更倾向于Hexo oranges 主题</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ChatGPT 年终分析</title>
       <link href="/2025/11/28/p3/"/>
       <url>/2025/11/28/p3/</url>
@@ -106,19 +171,6 @@
       <url>/2025/11/28/p2/</url>
       
         <content type="html"><![CDATA[<h3 id="Markdown-语法实现"><a href="#Markdown-语法实现" class="headerlink" title="Markdown 语法实现"></a>Markdown 语法实现</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">第1张图片</span>](<span class="link">/images/1.jpg</span>)</span><br></pre></td></tr></table></figure><p>显示大小随着图片大小变化改变</p><h4 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h4><p><img src="/images/1.jpg" alt="第1张图片"></p><p><img src="/images/1.jpg" alt="第2张图片"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客选择</title>
-      <link href="/2025/11/28/p1/"/>
-      <url>/2025/11/28/p1/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo配置简单，文档齐全，部署到GitHub非常方便，但是基于node包管理机制，项目文件繁多。</p><h4 id="Hexo-oranges"><a href="#Hexo-oranges" class="headerlink" title="Hexo oranges"></a>Hexo oranges</h4><p>主题功能齐全，UI极简，而且简单。</p><h3 id="Hugo"><a href="#Hugo" class="headerlink" title="Hugo"></a>Hugo</h3><p>Hugo配置复杂，灵活性很高，部署到GitHub需要通过Action的方式手动实现，项目文件结构简单，但是坑很多。</p><h4 id="Hugo-awesome"><a href="#Hugo-awesome" class="headerlink" title="Hugo awesome"></a>Hugo awesome</h4><p>主题简单，功能很少，可以完全定制主题。</p><h4 id="Hugo-stack"><a href="#Hugo-stack" class="headerlink" title="Hugo stack"></a>Hugo stack</h4><p>主题功能齐全，配置复杂，定制主题需要覆盖源文件。</p><h3 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h3><p>我更倾向于Hexo oranges 主题</p>]]></content>
       
       
       
