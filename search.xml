@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>学习Defold有感</title>
+      <link href="/2025/12/04/p-13/"/>
+      <url>/2025/12/04/p-13/</url>
+      
+        <content type="html"><![CDATA[<ul><li>Defold虽然是一个lua开发的游戏引擎，感觉很方便</li><li>但是学习资料和学习视频非常少</li><li>对比Love2D有可视化界面，有lua工程管理</li><li>但是工程结构比较复杂</li><li>提供的新手案例都是要花费很久才能理解里面的概念</li><li>没有场景的概念，只有集合的概念，和其他引擎对比很鸡肋</li></ul><blockquote><p>还是以学习godot为主</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2025/12/04/p/"/>
       <url>/2025/12/04/p/</url>
@@ -108,6 +121,19 @@
     
     
     <entry>
+      <title>飞书存储空间使用总结</title>
+      <link href="/2025/11/28/p-6/"/>
+      <url>/2025/11/28/p-6/</url>
+      
+        <content type="html"><![CDATA[<h3 id="飞书清理功能"><a href="#飞书清理功能" class="headerlink" title="飞书清理功能"></a>飞书清理功能</h3><p>和飞书官方人员沟通了一下，清理聊天文件完全是一个闭源的操作：</p><ul><li>不支持api操作</li><li>不支持api访问</li><li>系统不自带定时任务</li><li>需要手动创建清理任务</li><li>清理数据后会对调查取证能力(灰度)产生影响，清理的文件会丢失</li><li>容量上限提示只能推给个人，无法推送给管理员</li><li>当云端数据清理后，本地的历史消息也会被清理</li></ul><h3 id="清理注意点"><a href="#清理注意点" class="headerlink" title="清理注意点"></a>清理注意点</h3><p>1、特殊岗位的不能清理，</p><ul><li>财务</li><li>法务</li><li>审计</li><li>HR</li><li>采购</li><li>销售</li><li>高层（老板）</li></ul><p>2、清理前，上报领导</p><p>3、定期清理，1-3个月一次</p><p>4、只清理离职的，获取离职1年半的</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>bevy学习有感</title>
       <link href="/2025/11/28/p-5/"/>
       <url>/2025/11/28/p-5/</url>
@@ -121,19 +147,6 @@
             <tag> 学习 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>飞书存储空间使用总结</title>
-      <link href="/2025/11/28/p-6/"/>
-      <url>/2025/11/28/p-6/</url>
-      
-        <content type="html"><![CDATA[<h3 id="飞书清理功能"><a href="#飞书清理功能" class="headerlink" title="飞书清理功能"></a>飞书清理功能</h3><p>和飞书官方人员沟通了一下，清理聊天文件完全是一个闭源的操作：</p><ul><li>不支持api操作</li><li>不支持api访问</li><li>系统不自带定时任务</li><li>需要手动创建清理任务</li><li>清理数据后会对调查取证能力(灰度)产生影响，清理的文件会丢失</li><li>容量上限提示只能推给个人，无法推送给管理员</li><li>当云端数据清理后，本地的历史消息也会被清理</li></ul><h3 id="清理注意点"><a href="#清理注意点" class="headerlink" title="清理注意点"></a>清理注意点</h3><p>1、特殊岗位的不能清理，</p><ul><li>财务</li><li>法务</li><li>审计</li><li>HR</li><li>采购</li><li>销售</li><li>高层（老板）</li></ul><p>2、清理前，上报领导</p><p>3、定期清理，1-3个月一次</p><p>4、只清理离职的，获取离职1年半的</p>]]></content>
-      
-      
       
     </entry>
     
