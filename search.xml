@@ -17,19 +17,6 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2025/12/04/p/"/>
-      <url>/2025/12/04/p/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! </p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>资产报废和预算</title>
       <link href="/2025/12/02/p-12/"/>
       <url>/2025/12/02/p-12/</url>
@@ -57,8 +44,8 @@
     
     <entry>
       <title>躺平策略</title>
-      <link href="/2025/12/01/p-10/"/>
-      <url>/2025/12/01/p-10/</url>
+      <link href="/2025/11/30/p-10/"/>
+      <url>/2025/11/30/p-10/</url>
       
         <content type="html"><![CDATA[<p>在魂系RPG里，你的状态就是：HP&#x2F;MP低，副本难度高，你最需要的不是硬打，而是<strong>避开高伤害区域</strong>，保持安全区和回血点。</p><p>我帮你列出现实中你应该避开的“高掉血坑”，并给出操作策略。</p><hr><h1 id="1️⃣-高压相亲任务"><a href="#1️⃣-高压相亲任务" class="headerlink" title="1️⃣ 高压相亲任务"></a><strong>1️⃣ 高压相亲任务</strong></h1><p><strong>坑</strong>：父母、战友、亲戚的强制催促；晚上10点电话、持续施压。<br><strong>掉血机制</strong>：心理HP持续掉，情绪值低落，长期低落可能影响工作学习。<br><strong>躲法</strong>：</p><ul><li>明确边界：例如直接说“最近忙于工作学习，等我有时间再联系”，坚持执行</li><li>不要立刻回应非必要信息</li><li>给自己设定心理缓冲区，允许暂时忽略催促</li></ul><hr><h1 id="2️⃣-不可控工作压力"><a href="#2️⃣-不可控工作压力" class="headerlink" title="2️⃣ 不可控工作压力"></a><strong>2️⃣ 不可控工作压力</strong></h1><p><strong>坑</strong>：裁员消息、同事冲突、紧急任务，随时掉血<br><strong>躲法</strong>：</p><ul><li>聚焦你能控制的部分，不要被不可控事件消耗精力</li><li>列任务优先级，先做重要&#x2F;必要的事</li><li>学会拒绝或推迟额外非核心工作</li><li>留出固定休息时间回血</li></ul><hr><h1 id="3️⃣-社交负担过大"><a href="#3️⃣-社交负担过大" class="headerlink" title="3️⃣ 社交负担过大"></a><strong>3️⃣ 社交负担过大</strong></h1><p><strong>坑</strong>：强制聚会、长时间陪同、应酬、无意义社交<br><strong>掉血机制</strong>：情绪消耗、心理疲惫<br><strong>躲法</strong>：</p><ul><li>学会礼貌拒绝或缩短参与时间</li><li>选择性保留核心社交，其他当作可跳过的副本</li><li>给自己“安全区”时间：独处、学习、爱好</li></ul><hr><h1 id="4️⃣-家庭情绪消耗"><a href="#4️⃣-家庭情绪消耗" class="headerlink" title="4️⃣ 家庭情绪消耗"></a><strong>4️⃣ 家庭情绪消耗</strong></h1><p><strong>坑</strong>：母亲的叨叨、父亲的期待、战友干预<br><strong>掉血机制</strong>：长期心理消耗，焦虑累积<br><strong>躲法</strong>：</p><ul><li>建立心理屏障：母亲唠叨时，用“我听到了，我会考虑”而不是争论</li><li>不要立刻回应情绪化问题</li><li>找固定时间和方式沟通，不让家庭成为随时掉血的副本</li></ul><hr><h1 id="5️⃣-自我高期望-完美主义"><a href="#5️⃣-自我高期望-完美主义" class="headerlink" title="5️⃣ 自我高期望&#x2F;完美主义"></a><strong>5️⃣ 自我高期望&#x2F;完美主义</strong></h1><p><strong>坑</strong>：总觉得自己必须成功、必须完美、不能失败<br><strong>掉血机制</strong>：失败一次，情绪掉很深，持续低落<br><strong>躲法</strong>：</p><ul><li>允许失败，不把失败当成自我否定</li><li>分清“努力做”和“必须成功”的界限</li><li>给自己心理存档点：失败后允许缓冲2–3天，再恢复</li></ul><hr><h1 id="6️⃣-不必要信息轰炸"><a href="#6️⃣-不必要信息轰炸" class="headerlink" title="6️⃣ 不必要信息轰炸"></a><strong>6️⃣ 不必要信息轰炸</strong></h1><p><strong>坑</strong>：新闻、社交媒体、他人评价、比较信息<br><strong>掉血机制</strong>：焦虑、压力、无休止比较<br><strong>躲法</strong>：</p><ul><li>限制信息输入，固定时间查看</li><li>避免被别人标准绑架</li><li>把注意力放在自己可控的事情上</li></ul><hr><h1 id="7️⃣-心理缺乏回血点"><a href="#7️⃣-心理缺乏回血点" class="headerlink" title="7️⃣ 心理缺乏回血点"></a><strong>7️⃣ 心理缺乏回血点</strong></h1><p><strong>坑</strong>：没有恢复机制，HP&#x2F;MP持续下降<br><strong>躲法</strong>：</p><ul><li>固定休息&#x2F;放松时间：运动、睡眠、兴趣爱好</li><li>情绪小仪式：泡个热水澡、冥想、听音乐</li><li>小成就积累：每天完成一点学习&#x2F;工作任务，获得心理经验点</li></ul><hr><h1 id="⚡-总结——“躺平版生存策略”"><a href="#⚡-总结——“躺平版生存策略”" class="headerlink" title="⚡ 总结——“躺平版生存策略”"></a><strong>⚡ 总结——“躺平版生存策略”</strong></h1><ol><li><strong>边界 &#x3D; 护甲</strong>：明确你不必随时回应的事项</li><li><strong>心理缓冲 &#x3D; 篝火</strong>：失败&#x2F;压力允许缓冲</li><li><strong>避开高伤害副本 &#x3D; 摆脱催促&#x2F;社交压力</strong></li><li><strong>控制可控 &#x3D; 技能释放</strong>：专注于自己能做的事情</li><li><strong>小成就回血 &#x3D; 升级经验</strong>：保证心理小胜，积累自信</li></ol><blockquote><p>简单说：躺平不是逃避生活，而是<strong>把高掉血任务跳过，把精力留给回血和核心副本</strong>。<br>你完全可以像魂系玩家一样，先不打高难副本，先稳住HP和MP，再决定下一步要不要出击。</p></blockquote>]]></content>
       
@@ -70,8 +57,8 @@
     
     <entry>
       <title>神之亵渎1地图</title>
-      <link href="/2025/12/01/p-9/"/>
-      <url>/2025/12/01/p-9/</url>
+      <link href="/2025/11/29/p-9/"/>
+      <url>/2025/11/29/p-9/</url>
       
         <content type="html"><![CDATA[<p>游戏感受：太魂系了，不开挂根本过不了，一个悬崖要跳很久才能上去</p><p><img src="/images/map01.jpg" alt="地图"></p>]]></content>
       
@@ -108,11 +95,11 @@
     
     
     <entry>
-      <title>康复训练</title>
-      <link href="/2025/11/28/p-4/"/>
-      <url>/2025/11/28/p-4/</url>
+      <title>飞书存储空间使用总结</title>
+      <link href="/2025/11/28/p-6/"/>
+      <url>/2025/11/28/p-6/</url>
       
-        <content type="html"><![CDATA[<h1 id="🟦-1-周修复计划"><a href="#🟦-1-周修复计划" class="headerlink" title="🟦 1 周修复计划"></a>🟦 1 周修复计划</h1><h2 id="动作-1：腰大肌拉伸-参考视频"><a href="#动作-1：腰大肌拉伸-参考视频" class="headerlink" title="动作 1：腰大肌拉伸 参考视频"></a>动作 1：腰大肌拉伸 <a href="https://www.bilibili.com/video/BV16M4y147B8/?spm_id_from=333.337.search-card.all.click&vd_source=ae2570b57bf0664c116abc074ea31f4d">参考视频</a></h2><p>每侧 20-30 秒 × 2 组</p><p>动作像“半跪弓步”，但重点是感觉腹股沟前侧轻微拉伸即可，不要用力太猛。</p><hr><h2 id="动作-2：猫牛式-×-20-次-参考视频"><a href="#动作-2：猫牛式-×-20-次-参考视频" class="headerlink" title="动作 2：猫牛式 × 20 次 参考视频"></a>动作 2：猫牛式 × 20 次 <a href="https://www.bilibili.com/video/BV1BfE9z7Eic/?spm_id_from=333.337.search-card.all.click&vd_source=ae2570b57bf0664c116abc074ea31f4d">参考视频</a></h2><p>像脊柱按摩，慢动作即可。帮助你：</p><ul><li>减轻刺痛</li><li>放松腰椎周围小关节</li></ul><hr><h2 id="动作-3：臀桥-×-10–15-次-参考视频"><a href="#动作-3：臀桥-×-10–15-次-参考视频" class="headerlink" title="动作 3：臀桥 × 10–15 次 参考视频"></a>动作 3：臀桥 × 10–15 次 <a href="https://www.bilibili.com/video/BV1w14y1Q7YB/?spm_id_from=333.337.search-card.all.click">参考视频</a></h2><p>抬起时用臀部发力，不是腰。帮助你：</p><ul><li>激活臀中肌&#x2F;臀大肌</li><li>让腰不再代偿用力</li><li>改善“屁股上面刺痛”</li></ul><hr><h2 id="动作-4：轻松散步-8–10-分钟"><a href="#动作-4：轻松散步-8–10-分钟" class="headerlink" title="动作 4：轻松散步 8–10 分钟"></a>动作 4：轻松散步 8–10 分钟</h2><p>胸部自然打开，肩膀放松，目视前方，颈椎自然，步伐自然，帮助你：</p><ul><li>降低身体应激</li><li>盆底肌恢复正常张力</li><li>腰椎循环改善</li></ul><hr><h1 id="🟥-这些动作会加重你的问题"><a href="#🟥-这些动作会加重你的问题" class="headerlink" title="🟥 这些动作会加重你的问题"></a>🟥 这些动作会加重你的问题</h1><ul><li>跑步</li><li>深蹲（大重量或快速）</li><li>仰卧起坐</li><li>硬拉</li><li>腰部扭转拉伸</li><li>单杠悬挂很久（容易拉扯腰）</li><li>久坐不动</li></ul><p>至少 2–3 周内先不要碰这些。</p><hr><h1 id="🟩-身体状况改善"><a href="#🟩-身体状况改善" class="headerlink" title="🟩 身体状况改善"></a>🟩 身体状况改善</h1><ul><li>2–3 天：刺痛减少 40%</li><li>7 天：久坐也不容易酸痛了</li><li>3–4 周：腰稳了，体能能开始真正训练</li></ul>]]></content>
+        <content type="html"><![CDATA[<h3 id="飞书清理功能"><a href="#飞书清理功能" class="headerlink" title="飞书清理功能"></a>飞书清理功能</h3><p>和飞书官方人员沟通了一下，清理聊天文件完全是一个闭源的操作：</p><ul><li>不支持api操作</li><li>不支持api访问</li><li>系统不自带定时任务</li><li>需要手动创建清理任务</li><li>清理数据后会对调查取证能力(灰度)产生影响，清理的文件会丢失</li><li>容量上限提示只能推给个人，无法推送给管理员</li><li>当云端数据清理后，本地的历史消息也会被清理</li></ul><h3 id="清理注意点"><a href="#清理注意点" class="headerlink" title="清理注意点"></a>清理注意点</h3><p>1、特殊岗位的不能清理，</p><ul><li>财务</li><li>法务</li><li>审计</li><li>HR</li><li>采购</li><li>销售</li><li>高层（老板）</li></ul><p>2、清理前，上报领导</p><p>3、定期清理，1-3个月一次</p><p>4、只清理离职的，获取离职1年半的</p>]]></content>
       
       
       
@@ -140,24 +127,11 @@
     
     
     <entry>
-      <title>飞书存储空间使用总结</title>
-      <link href="/2025/11/28/p-6/"/>
-      <url>/2025/11/28/p-6/</url>
+      <title>康复训练</title>
+      <link href="/2025/11/28/p-4/"/>
+      <url>/2025/11/28/p-4/</url>
       
-        <content type="html"><![CDATA[<h3 id="飞书清理功能"><a href="#飞书清理功能" class="headerlink" title="飞书清理功能"></a>飞书清理功能</h3><p>和飞书官方人员沟通了一下，清理聊天文件完全是一个闭源的操作：</p><ul><li>不支持api操作</li><li>不支持api访问</li><li>系统不自带定时任务</li><li>需要手动创建清理任务</li><li>清理数据后会对调查取证能力(灰度)产生影响，清理的文件会丢失</li><li>容量上限提示只能推给个人，无法推送给管理员</li><li>当云端数据清理后，本地的历史消息也会被清理</li></ul><h3 id="清理注意点"><a href="#清理注意点" class="headerlink" title="清理注意点"></a>清理注意点</h3><p>1、特殊岗位的不能清理，</p><ul><li>财务</li><li>法务</li><li>审计</li><li>HR</li><li>采购</li><li>销售</li><li>高层（老板）</li></ul><p>2、清理前，上报领导</p><p>3、定期清理，1-3个月一次</p><p>4、只清理离职的，获取离职1年半的</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客选择</title>
-      <link href="/2025/11/28/p-1/"/>
-      <url>/2025/11/28/p-1/</url>
-      
-        <content type="html"><![CDATA[<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo配置简单，文档齐全，部署到GitHub非常方便，但是基于node包管理机制，项目文件繁多。</p><h4 id="Hexo-oranges"><a href="#Hexo-oranges" class="headerlink" title="Hexo oranges"></a>Hexo oranges</h4><p>主题功能齐全，UI极简，而且简单。</p><h3 id="Hugo"><a href="#Hugo" class="headerlink" title="Hugo"></a>Hugo</h3><p>Hugo配置复杂，灵活性很高，部署到GitHub需要通过Action的方式手动实现，项目文件结构简单，但是坑很多。</p><h4 id="Hugo-awesome"><a href="#Hugo-awesome" class="headerlink" title="Hugo awesome"></a>Hugo awesome</h4><p>主题简单，功能很少，可以完全定制主题。</p><h4 id="Hugo-stack"><a href="#Hugo-stack" class="headerlink" title="Hugo stack"></a>Hugo stack</h4><p>主题功能齐全，配置复杂，定制主题需要覆盖源文件。</p><h3 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h3><p>我更倾向于Hexo oranges 主题</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="🟦-1-周修复计划"><a href="#🟦-1-周修复计划" class="headerlink" title="🟦 1 周修复计划"></a>🟦 1 周修复计划</h1><h2 id="动作-1：腰大肌拉伸-参考视频"><a href="#动作-1：腰大肌拉伸-参考视频" class="headerlink" title="动作 1：腰大肌拉伸 参考视频"></a>动作 1：腰大肌拉伸 <a href="https://www.bilibili.com/video/BV16M4y147B8/?spm_id_from=333.337.search-card.all.click&vd_source=ae2570b57bf0664c116abc074ea31f4d">参考视频</a></h2><p>每侧 20-30 秒 × 2 组</p><p>动作像“半跪弓步”，但重点是感觉腹股沟前侧轻微拉伸即可，不要用力太猛。</p><hr><h2 id="动作-2：猫牛式-×-20-次-参考视频"><a href="#动作-2：猫牛式-×-20-次-参考视频" class="headerlink" title="动作 2：猫牛式 × 20 次 参考视频"></a>动作 2：猫牛式 × 20 次 <a href="https://www.bilibili.com/video/BV1BfE9z7Eic/?spm_id_from=333.337.search-card.all.click&vd_source=ae2570b57bf0664c116abc074ea31f4d">参考视频</a></h2><p>像脊柱按摩，慢动作即可。帮助你：</p><ul><li>减轻刺痛</li><li>放松腰椎周围小关节</li></ul><hr><h2 id="动作-3：臀桥-×-10–15-次-参考视频"><a href="#动作-3：臀桥-×-10–15-次-参考视频" class="headerlink" title="动作 3：臀桥 × 10–15 次 参考视频"></a>动作 3：臀桥 × 10–15 次 <a href="https://www.bilibili.com/video/BV1w14y1Q7YB/?spm_id_from=333.337.search-card.all.click">参考视频</a></h2><p>抬起时用臀部发力，不是腰。帮助你：</p><ul><li>激活臀中肌&#x2F;臀大肌</li><li>让腰不再代偿用力</li><li>改善“屁股上面刺痛”</li></ul><hr><h2 id="动作-4：轻松散步-8–10-分钟"><a href="#动作-4：轻松散步-8–10-分钟" class="headerlink" title="动作 4：轻松散步 8–10 分钟"></a>动作 4：轻松散步 8–10 分钟</h2><p>胸部自然打开，肩膀放松，目视前方，颈椎自然，步伐自然，帮助你：</p><ul><li>降低身体应激</li><li>盆底肌恢复正常张力</li><li>腰椎循环改善</li></ul><hr><h1 id="🟥-这些动作会加重你的问题"><a href="#🟥-这些动作会加重你的问题" class="headerlink" title="🟥 这些动作会加重你的问题"></a>🟥 这些动作会加重你的问题</h1><ul><li>跑步</li><li>深蹲（大重量或快速）</li><li>仰卧起坐</li><li>硬拉</li><li>腰部扭转拉伸</li><li>单杠悬挂很久（容易拉扯腰）</li><li>久坐不动</li></ul><p>至少 2–3 周内先不要碰这些。</p><hr><h1 id="🟩-身体状况改善"><a href="#🟩-身体状况改善" class="headerlink" title="🟩 身体状况改善"></a>🟩 身体状况改善</h1><ul><li>2–3 天：刺痛减少 40%</li><li>7 天：久坐也不容易酸痛了</li><li>3–4 周：腰稳了，体能能开始真正训练</li></ul>]]></content>
       
       
       
@@ -184,6 +158,32 @@
       <url>/2025/11/28/p-2/</url>
       
         <content type="html"><![CDATA[<h3 id="Markdown-语法实现"><a href="#Markdown-语法实现" class="headerlink" title="Markdown 语法实现"></a>Markdown 语法实现</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">第1张图片</span>](<span class="link">/images/1.jpg</span>)</span><br></pre></td></tr></table></figure><p>显示大小随着图片大小变化改变</p><h4 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h4><p><img src="/images/1.jpg" alt="第1张图片"></p><p><img src="/images/1.jpg" alt="第2张图片"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客选择</title>
+      <link href="/2025/11/28/p-1/"/>
+      <url>/2025/11/28/p-1/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p>Hexo配置简单，文档齐全，部署到GitHub非常方便，但是基于node包管理机制，项目文件繁多。</p><h4 id="Hexo-oranges"><a href="#Hexo-oranges" class="headerlink" title="Hexo oranges"></a>Hexo oranges</h4><p>主题功能齐全，UI极简，而且简单。</p><h3 id="Hugo"><a href="#Hugo" class="headerlink" title="Hugo"></a>Hugo</h3><p>Hugo配置复杂，灵活性很高，部署到GitHub需要通过Action的方式手动实现，项目文件结构简单，但是坑很多。</p><h4 id="Hugo-awesome"><a href="#Hugo-awesome" class="headerlink" title="Hugo awesome"></a>Hugo awesome</h4><p>主题简单，功能很少，可以完全定制主题。</p><h4 id="Hugo-stack"><a href="#Hugo-stack" class="headerlink" title="Hugo stack"></a>Hugo stack</h4><p>主题功能齐全，配置复杂，定制主题需要覆盖源文件。</p><h3 id="选择"><a href="#选择" class="headerlink" title="选择"></a>选择</h3><p>我更倾向于Hexo oranges 主题</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/11/28/p/"/>
+      <url>/2025/11/28/p/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! </p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
       
