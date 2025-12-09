@@ -13,7 +13,7 @@
   
   <title>
     
-      archive_a: 2025/12 
+      GPIO 和 网络学习有感 
       
       
       |
@@ -104,167 +104,147 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2025</span>
-          </h2>
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">GPIO 和 网络学习有感</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2025-12-09 09:54:45
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <h3 id="对GPIO的理解"><a href="#对GPIO的理解" class="headerlink" title="对GPIO的理解"></a>对GPIO的理解</h3><ul>
+<li>GPIO 电路是简单的物理电路，用来把外部电平转换为寄存器中的 0&#x2F;1，或者把寄存器里的 0&#x2F;1 输出为电平。</li>
+<li>GPIO 本身不做任何逻辑运算，只负责输入&#x2F;输出数字信号。</li>
+<li>逻辑运算（如 1+1、判断等）全部由 CPU 的 ALU 完成。</li>
+<li>程序代码存放在 Flash 里，CPU 执行这些代码时，会按指令去读取或写入 GPIO 寄存器。</li>
+<li>所以 GPIO 只是一个接口，CPU 才是做运算和决策的核心。</li>
+</ul>
+<h3 id="网络学习有感"><a href="#网络学习有感" class="headerlink" title="网络学习有感"></a>网络学习有感</h3><ol>
+<li><p><strong>网络学习缺乏即时成就感</strong><br>学半天只是为了让一个包能成功发出去，不像编程那样能快速产生成果。</p>
+</li>
+<li><p><strong>名词极多但本质简单</strong><br>虽然实际应用充满各种复杂概念（VPN、网关、SNMP、DHCP、DNS、NAT 等），<br>但底层其实都只是“发包—处理—收包”这一条主线。</p>
+</li>
+<li><p><strong>企业网络复杂到超出想象</strong><br>像奇安信 VPN 这样的系统为了适应各种企业环境，会开发大量模块。<br>但真正日常会用到的功能，往往不超过 10%。</p>
+</li>
+<li><p><strong>OSI 七层模型只是加工流水线</strong><br>所有网络设备和协议，本质就是对数据包进行：<br><strong>封装、解封、转发、过滤、加密、解密、认证、打标签</strong> 等操作。<br>每个概念都是这一套加工流程的不同“工序”。</p>
+</li>
+<li><p><strong>网络系统的复杂度远超过一般嵌入式</strong><br>嵌入式偏向硬件控制，但网络涉及协议、拓扑、安全、路由、加密、策略等大量系统级知识，整体复杂度更高。</p>
+</li>
+<li><p><strong>网络知识碎、杂、累</strong><br>名词多、层级多、场景多，不仅难记，还容易记完忘，耗费精力巨大。</p>
+</li>
+<li><p><strong>网络工作更像“维护”而不是“创造”</strong><br>常态稳定没人关注，一出问题就是高压：</p>
+<ul>
+<li>正常 → 没人夸</li>
+<li>出事 → 全网骂<br>很难获得成就感。</li>
+</ul>
+</li>
+<li><p><strong>与自身思维方式不匹配</strong><br>网络偏抽象、繁琐、规则多，更适合喜欢体系、规范、排错的人；<br>而我更偏向逻辑清晰、有可见成果的方向，自然会觉得无趣。</p>
+</li>
+</ol>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2025/12/09/p-14/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2025-12-09 09:54:45
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+          </div>
         </div>
       
-      <div class="post-item" title="GPIO 和 网络学习有感">
-        <div class="time-m-d">12-09</div>
-        <div class="title">
-          <a href="/2025/12/09/p-15/">
-            <span>GPIO 和 网络学习有感</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-      <div class="post-item" title="对于烟雨江湖碧游教的理解">
-        <div class="time-m-d">12-09</div>
-        <div class="title">
-          <a href="/2025/12/09/p-14/">
-            <span>对于烟雨江湖碧游教的理解</span>
-          </a>
-        </div>
-      </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9GPIO%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对GPIO的理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E6%9C%89%E6%84%9F"><span class="toc-text">网络学习有感</span></a></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-      <div class="post-item" title="学习Defold有感">
-        <div class="time-m-d">12-04</div>
-        <div class="title">
-          <a href="/2025/12/04/p-13/">
-            <span>学习Defold有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="资产报废和预算">
-        <div class="time-m-d">12-02</div>
-        <div class="title">
-          <a href="/2025/12/02/p-12/">
-            <span>资产报废和预算</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="权限与风险归纳分析">
-        <div class="time-m-d">12-02</div>
-        <div class="title">
-          <a href="/2025/12/02/p-11/">
-            <span>权限与风险归纳分析</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="躺平策略">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2025/11/30/p-10/">
-            <span>躺平策略</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="神之亵渎1地图">
-        <div class="time-m-d">11-29</div>
-        <div class="title">
-          <a href="/2025/11/29/p-9/">
-            <span>神之亵渎1地图</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="带电操作">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-8/">
-            <span>带电操作</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="这是一个测试文章">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-7/">
-            <span>这是一个测试文章</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="飞书存储空间使用总结">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-6/">
-            <span>飞书存储空间使用总结</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="bevy学习有感">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-5/">
-            <span>bevy学习有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="康复训练">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-4/">
-            <span>康复训练</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="ChatGPT 年终分析">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-3/">
-            <span>ChatGPT 年终分析</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="显示图片">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-2/">
-            <span>显示图片</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="博客选择">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-1/">
-            <span>博客选择</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Hello World">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p/">
-            <span>Hello World</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
