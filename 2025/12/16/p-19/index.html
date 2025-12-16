@@ -177,6 +177,8 @@
 <li>webview2 非常占用内存，比如打开一个百度会占用300M，因为打开百度调用很多东西：加载完整网页、执行 JS、广告 &#x2F; 统计 &#x2F; 动画、iframe &#x2F; worker</li>
 <li>原生的win10应用，Tauri本地应用，所有的页面和功能都是本地创建的不会产生这么多的数据和功能调用</li>
 <li>未实现 User Data 隔离</li>
+<li>跨域检查只在 父页面访问不同源子页面 时触发。Tauri加载的页面没有父页面，而iframe中有父页面</li>
+<li>跨域解决了：如果没有跨域的安全策略，不安全网页 evil.com 可以直接读取 bank.com 的 DOM、cookie、localStorage</li>
 </ul>
 
       </div>
