@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode="dark">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="cheng chao" />
+  <!-- Open Graph Description 简短摘要-->
+  
+  <!-- 用于搜索引擎的文章摘要 -->
+  
+  
+  
+  <title>
+    
+      离职资产自动化 
+      
+      
+      |
+    
+     我的博客
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">诗和远方</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">归档</a>
+        </li>
+      
+        <li class="nav-item" data-path="/tags/">
+          <a href="/tags/">标签</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">离职资产自动化</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2025-12-25 16:26:09
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <ul>
+<li>通过playwright自动登录获取token</li>
+<li>访问资产API获取员工的资产列表</li>
+<li>将资产列表存入xlsx中</li>
+<li>xlsx已默认加入筛选，只显示未退库的资产</li>
+<li>打开修改后的资产列表</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">from</span> openpyxl <span class="keyword">import</span> Workbook, load_workbook</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> playwright.sync_api <span class="keyword">import</span> sync_playwright</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line"></span><br><span class="line">TOKEN_FILE = <span class="string">&quot;./token.json&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">load_token</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;从本地文件读取 token&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(TOKEN_FILE):</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(TOKEN_FILE, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        data = json.load(f)</span><br><span class="line">    <span class="comment"># 检查是否过期</span></span><br><span class="line">    <span class="keyword">if</span> data[<span class="string">&quot;expires_at&quot;</span>] &gt; time.time():</span><br><span class="line">        <span class="keyword">return</span> data[<span class="string">&quot;access_token&quot;</span>]</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">save_token</span>(<span class="params">token, expires_in</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;保存 token 到本地，计算过期时间&quot;&quot;&quot;</span></span><br><span class="line">    data = &#123;</span><br><span class="line">        <span class="string">&quot;access_token&quot;</span>: token,</span><br><span class="line">        <span class="string">&quot;expires_at&quot;</span>: time.time() + expires_in,</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(TOKEN_FILE, <span class="string">&quot;w&quot;</span>, encoding=<span class="string">&quot;utf-8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        json.dump(data, f, ensure_ascii=<span class="literal">False</span>, indent=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">login_and_get_token</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;用 Playwright 模拟登录获取 token&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">with</span> sync_playwright() <span class="keyword">as</span> p:</span><br><span class="line">        <span class="comment"># browser = p.chromium.launch(headless=False)  # 先用可视化，方便调试</span></span><br><span class="line">        browser = p.chromium.launch(headless=<span class="literal">True</span>)</span><br><span class="line">        context = browser.new_context()</span><br><span class="line">        page = context.new_page()</span><br><span class="line"></span><br><span class="line">        page.goto(<span class="string">&quot;https://work.yideamobile.com/passport/login&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># ====== 自动填账号密码 ======</span></span><br><span class="line">        page.fill(<span class="string">&#x27;input[placeholder=&quot;手机号/邮箱&quot;]&#x27;</span>, <span class="string">&quot;&quot;</span>)</span><br><span class="line">        page.fill(<span class="string">&#x27;input[placeholder=&quot;密码&quot;]&#x27;</span>, <span class="string">&quot;&quot;</span>)</span><br><span class="line">        page.click(<span class="string">&#x27;button[type=&quot;button&quot;]&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 等待跳转到首页（自己根据实际页面改）</span></span><br><span class="line">        page.wait_for_selector(<span class="string">&quot;.guide-index&quot;</span>, timeout=<span class="number">15000</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 获取localStorage中的access_token</span></span><br><span class="line">        storage = page.evaluate(<span class="string">&quot;() =&gt; JSON.stringify(localStorage)&quot;</span>)</span><br><span class="line">        local_storage = json.loads(storage)</span><br><span class="line">        token = local_storage.get(<span class="string">&quot;at&quot;</span>)</span><br><span class="line">        browser.close()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 假设 token 有效期1小时</span></span><br><span class="line">        expires_in = <span class="number">3600</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 保存到本地</span></span><br><span class="line">        save_token(token, expires_in)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;获取新 token:&quot;</span>, token)</span><br><span class="line">        <span class="keyword">return</span> token</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_token</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;获取 token（先读本地文件，没有或过期就登录）&quot;&quot;&quot;</span></span><br><span class="line">    token = load_token()</span><br><span class="line">    <span class="keyword">if</span> token:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;使用本地缓存 token&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> token</span><br><span class="line">    <span class="keyword">return</span> login_and_get_token()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_asset_list</span>(<span class="params">token, name</span>):</span><br><span class="line">    url = <span class="string">&quot;https://openapi.yideamobile.com/v1/private/Fuzzy/Asset/readonly&quot;</span></span><br><span class="line">    headers = &#123;<span class="string">&quot;Authorization&quot;</span>: <span class="string">f&quot;Bearer <span class="subst">&#123;token&#125;</span>&quot;</span>, <span class="string">&quot;Accept&quot;</span>: <span class="string">&quot;application/json&quot;</span>&#125;</span><br><span class="line"></span><br><span class="line">    params = &#123;</span><br><span class="line">        <span class="string">&quot;take&quot;</span>: <span class="number">50</span>,</span><br><span class="line">        <span class="string">&quot;skip&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="string">&quot;orderby&quot;</span>: <span class="string">&quot;-id&quot;</span>,</span><br><span class="line">        <span class="string">&quot;requireHierarchies&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">&quot;filterByPermission&quot;</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="string">&quot;deleted&quot;</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="string">&quot;userContains&quot;</span>: name,</span><br><span class="line">        <span class="string">&quot;extensionFilters&quot;</span>: [],</span><br><span class="line">        <span class="comment"># 模糊查找</span></span><br><span class="line">        <span class="comment"># &quot;fuzzyKeyword&quot;: name,</span></span><br><span class="line">        <span class="comment"># &quot;fuzzyFields&quot;: &quot;Barcode,Name,SNNo,User,Comment,Specs&quot;,</span></span><br><span class="line">        <span class="comment"># &quot;filterInExtensions&quot;: 1,</span></span><br><span class="line">        <span class="comment"># &quot;include&quot;: &quot;total&quot;,</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    resp = requests.post(url, headers=headers, params=params, timeout=<span class="number">10</span>)</span><br><span class="line">    resp.raise_for_status()</span><br><span class="line">    <span class="keyword">return</span> resp.json()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 1. 获取token</span></span><br><span class="line">    token = get_token()</span><br><span class="line"></span><br><span class="line">    <span class="built_in">list</span> = [</span><br><span class="line">        <span class="string">&quot;斌斌(陈久斌)&quot;</span>,</span><br><span class="line">    ]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> username <span class="keyword">in</span> <span class="built_in">list</span>:</span><br><span class="line">        <span class="comment"># 2. 获取对应员工的资产列表</span></span><br><span class="line">        data = get_asset_list(token, username)</span><br><span class="line">        results = data.get(<span class="string">&quot;results&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> results:</span><br><span class="line">            user = item.get(<span class="string">&quot;userEmployeeName&quot;</span>)  <span class="comment"># 使用人</span></span><br><span class="line">            specs = item.get(<span class="string">&quot;specs&quot;</span>)  <span class="comment"># 规格型号</span></span><br><span class="line">            name = item.get(<span class="string">&quot;name&quot;</span>)  <span class="comment"># 资产名称</span></span><br><span class="line">            barcode = item.get(<span class="string">&quot;barcode&quot;</span>)  <span class="comment"># 资产条码</span></span><br><span class="line">            sn = item.get(<span class="string">&quot;sn&quot;</span>)  <span class="comment"># 序列号</span></span><br><span class="line">            now = datetime.now().strftime(<span class="string">&quot;%Y/%m/%d&quot;</span>)</span><br><span class="line"></span><br><span class="line">            <span class="built_in">print</span>(</span><br><span class="line">                <span class="string">f&quot;资产条码:<span class="subst">&#123;barcode&#125;</span> 资产名称:<span class="subst">&#123;name&#125;</span> 规格型号:<span class="subst">&#123;specs&#125;</span> 使用人:<span class="subst">&#123;user&#125;</span> 序列号:<span class="subst">&#123;sn&#125;</span>&quot;</span></span><br><span class="line">            )</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 打开并追加一行</span></span><br><span class="line">            file_path = <span class="string">&quot;./离职资产.xlsx&quot;</span></span><br><span class="line">            wb = load_workbook(file_path)</span><br><span class="line">            ws = wb.active</span><br><span class="line">            ws.append([user, now, barcode, name, specs, sn, <span class="string">&quot;未退库&quot;</span>])</span><br><span class="line">            wb.save(file_path)</span><br><span class="line"></span><br><span class="line">    os.startfile(<span class="string">r&quot;离职资产.xlsx&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 资产库</span></span><br><span class="line">    url = <span class="string">&quot;https://work.yideamobile.com/#/asset/AssetInStorage&quot;</span></span><br><span class="line">    webbrowser.<span class="built_in">open</span>(url)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># OA流程待办</span></span><br><span class="line">    url = <span class="string">&quot;https://oa.yunjiglobal.com/wui/index.html?#/main/workflow/listDoing?menuIds=1,13&amp;_key=ijcfqj&quot;</span></span><br><span class="line">    webbrowser.<span class="built_in">open</span>(url)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1、hr 通过OA 或 邮件 通知离职(离职名单)</span></span><br><span class="line"><span class="comment"># 2、填写离职名单获取名下资产到xlsx中（耗时1分钟）</span></span><br><span class="line"><span class="comment"># 3、飞书通知员工归还资产（耗时2分钟）</span></span><br><span class="line"><span class="comment"># 4、到工位归还 手动扫码退库，更新表格资产状况，邮件回复（耗时2分钟）</span></span><br><span class="line"><span class="comment"># 5、过离职流程（打开OA 耗时1分钟）</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2025/12/19/p-21/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2025-12-25 16:26:09
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2025/12/25/p-24/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          
+              <a title="github" target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">
+                <i class="iconfont icon-github"></i>
+              </a>
+              
+        </li>
+        
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/kkxunguan">Copyright © 2025 cheng chao</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>未找到search.xml文件，具体请参考：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>请求失败，尝试重新刷新页面或稍后重试。<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+
+      </div>
+    </div>
+  </body>
+</html>
