@@ -13,7 +13,7 @@
   
   <title>
     
-      归档 
+      年后上班有感 
       
       
       |
@@ -104,298 +104,140 @@
 
 
       <div class="flex-container">
-        <!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
 
-<div class="container archives">
-  <div class="post-list">
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2099</span>
-          </h2>
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">年后上班有感</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2026-02-23 10:29:21
+        </span>
+        
+      </div>
+      <div class="markdown-body">
+        <p>管好心和行动边界，外物不扰心。</p>
+<h3 id="阳明心学实践-晨会"><a href="#阳明心学实践-晨会" class="headerlink" title="阳明心学实践(晨会)"></a>阳明心学实践(晨会)</h3><ul>
+<li>外部系统充斥复杂性和人际关系，属于不可控的“心外之物”。(复杂性、流程性、边界感、依附高层生态)</li>
+<li>我们的目标是把不可控因素变为可操作、可预测的边界，同时隔绝心神干扰。</li>
+<li>通过预留时间、提前准备、关键任务集中处理，形成安全缓冲。</li>
+<li>这样可以降低心的焦虑干扰，保持心清静而不乱。</li>
+<li>所有“野路子”技巧（如看编辑日期）只能部分缓解信息不透明，但无法改变外部系统本质，真正的控制在“心与行动边界”。</li>
+</ul>
+<h3 id="AI总结"><a href="#AI总结" class="headerlink" title="AI总结"></a>AI总结</h3><ul>
+<li>内心清明是根：不管外部系统多复杂，你只要知道自己的原则和责任，就能心安。</li>
+<li>行动边界是枝：只做自己必须做的、可控的事情，用预留时间、关键任务集中处理来隔离不可控因素</li>
+<li>技巧只是辅助：外部小技巧（如编辑日期、提前确认）不能解决本质问题，只是短期缓解消耗</li>
+</ul>
+<h3 id="弈剑风云决"><a href="#弈剑风云决" class="headerlink" title="弈剑风云决"></a>弈剑风云决</h3><ul>
+<li>玩法单一，大部分时间靠刷各种任务获取功法，导致功法和战斗系统非常鸡肋</li>
+<li>和烟雨江湖完全不能比</li>
+</ul>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2026/02/09/p-27/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2026-02-23 10:29:21
+            </span>
+            
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2099/01/01/p-22-1/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
         </div>
       
-      <div class="post-item" title="待办清单（持续更新）">
-        <div class="time-m-d">01-01</div>
-        <div class="title">
-          <a href="/2099/01/01/p-22-1/">
-            <span>待办清单（持续更新）</span>
-          </a>
-        </div>
-      </div>
+    </div>
     
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2026</span>
-          </h2>
-        </div>
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
       
-      <div class="post-item" title="年后上班有感">
-        <div class="time-m-d">02-23</div>
-        <div class="title">
-          <a href="/2026/02/23/p-28/">
-            <span>年后上班有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="苹果电脑采购注意事项">
-        <div class="time-m-d">02-09</div>
-        <div class="title">
-          <a href="/2026/02/09/p-27/">
-            <span>苹果电脑采购注意事项</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="老子和现代社会分析">
-        <div class="time-m-d">01-06</div>
-        <div class="title">
-          <a href="/2026/01/06/p-26/">
-            <span>老子和现代社会分析</span>
-          </a>
-        </div>
-      </div>
-    
-        <!-- 后续文章的发布年份呈现 -->
-        <div class="content-title">
-          <h2>
-            <span>2025</span>
-          </h2>
-        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B3%E6%98%8E%E5%BF%83%E5%AD%A6%E5%AE%9E%E8%B7%B5-%E6%99%A8%E4%BC%9A"><span class="toc-text">阳明心学实践(晨会)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AI%E6%80%BB%E7%BB%93"><span class="toc-text">AI总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%88%E5%89%91%E9%A3%8E%E4%BA%91%E5%86%B3"><span class="toc-text">弈剑风云决</span></a></li></ol>
       
-      <div class="post-item" title="Django Admin 后台快速搭建">
-        <div class="time-m-d">12-31</div>
-        <div class="title">
-          <a href="/2025/12/31/p-25/">
-            <span>Django Admin 后台快速搭建</span>
-          </a>
-        </div>
-      </div>
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
     
-      <div class="post-item" title="四渡赤水有感">
-        <div class="time-m-d">12-25</div>
-        <div class="title">
-          <a href="/2025/12/25/p-24/">
-            <span>四渡赤水有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="离职资产自动化">
-        <div class="time-m-d">12-25</div>
-        <div class="title">
-          <a href="/2025/12/25/p-23/">
-            <span>离职资产自动化</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="空转、游戏、色情">
-        <div class="time-m-d">12-19</div>
-        <div class="title">
-          <a href="/2025/12/19/p-21/">
-            <span>空转、游戏、色情</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="RPGMV解包">
-        <div class="time-m-d">12-17</div>
-        <div class="title">
-          <a href="/2025/12/17/p-20/">
-            <span>RPGMV解包</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="基于Tauri开发的小型浏览器">
-        <div class="time-m-d">12-16</div>
-        <div class="title">
-          <a href="/2025/12/16/p-19/">
-            <span>基于Tauri开发的小型浏览器</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="轩辕剑外传枫之舞">
-        <div class="time-m-d">12-14</div>
-        <div class="title">
-          <a href="/2025/12/14/p-18/">
-            <span>轩辕剑外传枫之舞</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="旅游的意义">
-        <div class="time-m-d">12-11</div>
-        <div class="title">
-          <a href="/2025/12/11/p-17/">
-            <span>旅游的意义</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="多线程爬虫库 gevent">
-        <div class="time-m-d">12-11</div>
-        <div class="title">
-          <a href="/2025/12/11/p-16/">
-            <span>多线程爬虫库 gevent</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="GPIO 和 学习有感">
-        <div class="time-m-d">12-09</div>
-        <div class="title">
-          <a href="/2025/12/09/p-15/">
-            <span>GPIO 和 学习有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="对于烟雨江湖碧游教的理解">
-        <div class="time-m-d">12-09</div>
-        <div class="title">
-          <a href="/2025/12/09/p-14/">
-            <span>对于烟雨江湖碧游教的理解</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="学习Defold有感">
-        <div class="time-m-d">12-04</div>
-        <div class="title">
-          <a href="/2025/12/04/p-13/">
-            <span>学习Defold有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="资产报废和预算">
-        <div class="time-m-d">12-02</div>
-        <div class="title">
-          <a href="/2025/12/02/p-12/">
-            <span>资产报废和预算</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="权限与风险归纳分析">
-        <div class="time-m-d">12-02</div>
-        <div class="title">
-          <a href="/2025/12/02/p-11/">
-            <span>权限与风险归纳分析</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="躺平策略">
-        <div class="time-m-d">11-30</div>
-        <div class="title">
-          <a href="/2025/11/30/p-10/">
-            <span>躺平策略</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="神之亵渎1地图">
-        <div class="time-m-d">11-29</div>
-        <div class="title">
-          <a href="/2025/11/29/p-9/">
-            <span>神之亵渎1地图</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="带电操作">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-8/">
-            <span>带电操作</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="这是一个测试文章">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-7/">
-            <span>这是一个测试文章</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="飞书存储空间使用总结">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-6/">
-            <span>飞书存储空间使用总结</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="bevy学习有感">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-5/">
-            <span>bevy学习有感</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="康复训练">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-4/">
-            <span>康复训练</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="ChatGPT 年终分析">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-3/">
-            <span>ChatGPT 年终分析</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="显示图片">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-2/">
-            <span>显示图片</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="博客选择">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p-1/">
-            <span>博客选择</span>
-          </a>
-        </div>
-      </div>
-    
-      <div class="post-item" title="Hello World">
-        <div class="time-m-d">11-28</div>
-        <div class="title">
-          <a href="/2025/11/28/p/">
-            <span>Hello World</span>
-          </a>
-        </div>
+      <div class="comments-container">
+        
+
+
+
+
+
+
+
       </div>
     
   </div>
-</div>
+
 
         
 <div class="footer">
